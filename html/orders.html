@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans&family=Lato:wght@700&family=Michroma&family=Montserrat:wght@400;800&family=Nanum+Gothic:wght@700&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans&family=Fjalla+One&family=Lato:wght@700&family=Michroma&family=Montserrat:wght@400;800&family=Nanum+Gothic:wght@700&family=Pinyon+Script&family=Poppins:wght@300&family=Questrial&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=DM+Sans&family=Fjalla+One&family=Lato:wght@700&family=Michroma&family=Montserrat:wght@400;800&family=Nanum+Gothic:wght@700&family=Pinyon+Script&family=Poppins:wght@300&family=Questrial&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            /* CSS RESET */
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('../img/bg.jpg');
+            background-size: 100%;
+            color: white;
+        }
+
+        /* FOR CONTAINER-1 */
+        .container-1 {
+            /* border: 2px red solid; */
+            margin: 40px;
+            height: 140px;
+            /* background-color: rgb(31, 31, 31); */
+            font-size: 20px;
+            font-weight: 800;
+
+        }
+
+        .container-1 span {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+            font-size: 100px;
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        .container-2 {
+            /* border: 2px red solid; */
+            margin: 40px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(24, 24, 24);
+            position: relative;
+            font-family: 'Questrial', sans-serif;
+            border-radius: 10px;
+        }
+
+        .container-2:hover {
+            cursor: pointer;
+        }
+
+
+        /* .c2items {
+            /* border: 2px green solid; 
+
+        } */
+
+        .c2items p button {
+            background-color: rgb(255, 255, 255);
+            border: 0px white solid;
+            border-radius: 10px;
+            margin-left: 3px;
+            font-family: 'Questrial', sans-serif;
+            height: 15px;
+        }
+
+        .c2items p button:hover {
+            background-color: rgb(213, 213, 213);
+            cursor: pointer;
+
+
+        }
+
+        #item-1 {
+            display: inline-block;
+            height: 140px;
+            width: 15%;
+            position: absolute;
+            top: 40px;
+        }
+
+        #item-1>img {
+            height: 110px;
+            width: 210px;
+            filter: invert(10%);
+        }
+
+        #item-2 {
+            height: 140px;
+            display: inline-block;
+            width: 80%;
+            position: absolute;
+            top: 20px;
+            left: 250px;
+        }
+
+        #item-2>h2 {
+            font-weight: 800;
+        }
+
+        .container-3 {
+            /* border: 2px red solid; */
+            margin: 40px;
+            height: 200px;
+            padding: 20px;
+            background-color: rgb(24, 24, 24);
+            position: relative;
+            font-family: 'Questrial', sans-serif;
+            border-radius: 10px;
+        }
+
+        .container-3:hover {
+            cursor: pointer;
+        }
+
+        #item-3 {
+            display: inline-block;
+            height: 140px;
+            width: 15%;
+            position: absolute;
+
+        }
+
+        #item-3>img {
+            height: 90px;
+            width: 190px;
+            filter: invert(10%);
+            position: absolute;
+            top: 30px;
+        }
+
+        #item-4 {
+            height: 140px;
+            display: inline-block;
+            width: 80%;
+            position: absolute;
+            left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-1">
+        <div>
+            <span style="color:yellow;">O</span>
+            <span style="color:rgb(221, 221, 0);">r</span>
+            <span style="color:rgb(201, 201, 0);">d</span>
+            <span style="color:rgb(180, 180, 0);">e</span>
+            <span style="color:rgb(160, 160, 0);">r</span>
+            <span style="color:rgb(131, 131, 0);">s</span>
+        </div>
+    </header>
+    <div class="container-2">
+        <div class="c2items" id="item-1">
+            <img src="../img/c2p1.jpg" alt="">
+        </div>
+
+        <div class="c2items" id="item-2">
+            <h1 style="font-weight:800;">Arriving on 23rd November!</h1>
+            <p style="line-height: 25px;">Delivery Partner: <span style="color:rgb(255, 255, 0);">Delhivery</span>
+                <br>
+                Tracking ID: <span style="color:rgb(255, 255, 0);">145869329</span> <button>Track Order</button>
+                <br>
+                Size: <span style="color:rgb(255, 255, 0);">Wide</span>
+                <br>
+                <span style="color:grey; font-size: 25px;">Price: ₹2299</span>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="c2items" id="item-3">
+            <img src="../img/c3p1.jpg" alt="">
+        </div>
+        <div class="c2items" id="item-4">
+            <h1 style="font-weight:800;">Arriving on 28th November!</h1>
+            <p style="line-height: 25px;">Delivery Partner: <span style="color:rgb(255, 255, 0);">Blue Dart</span>
+                <br>
+                Tracking ID: <span style="color:rgb(255, 255, 0);">14586654</span> <button>Track Order</button>
+                <br>
+                Size: <span style="color:rgb(255, 255, 0);">Wide</span>
+                <br>
+                <span style="color:grey; font-size: 25px;">Price: ₹3299</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
