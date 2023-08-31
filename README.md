@@ -11,8 +11,8 @@ Database: MySQL.
 
 ## Credits
 
-Manu Chaitanya()
-
+Manu Chaitanya[https://github.com/manuchaitanya17] - Front-End Developer and Database Manager.<br>
+Harsh Jain[https://github.com/harshjain1729] - Back-End Developer.<br>
 
 ## License
 
